@@ -13,13 +13,24 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
-    modules: {
+    module: {
         rules: [
             {
                 test: /\.jpg$/i,
                 use: [
                     {
-                        loader: 'file-loader'
+                        loader: 'file-loader',
+                        options: {
+                            name (file) {
+                                return "[path][name].[ext]"
+                            },
+                            publicPath: function(url) {
+                                return url.replace("../", "/assets/")
+                            }
+                        }
+                    },
+                    {
+                        loader: 'image-webpack-loader'
                     }
                 ]
             }
