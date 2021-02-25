@@ -24,10 +24,10 @@ const config = {
           options: {
             esModule: false,
             name (file) {
-              return 'src/img/[name].[ext]'
+              return '[path][name].[ext]'
             },
             publicPath: function(url) {
-                return url.replace('../', '/src/')
+                return url.replace('../', '/assets/')
             },
           }  
         }, 
@@ -59,7 +59,7 @@ const config = {
         icons: [{
             src: path.resolve("assets/img/icons/icon-512x512.png"),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join("src", "icons")
+            destination: path.join("assets", "icons")
         }]
     })
   ],
