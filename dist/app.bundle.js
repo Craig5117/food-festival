@@ -35,7 +35,7 @@ eval("/*!\n  * Bootstrap v4.6.0 (https://getbootstrap.com/)\n  * Copyright 2011-
   \***********************************/
 /***/ ((module) => {
 
-eval("module.exports = \"assets/img/food-table.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/food-table.jpg?");
+eval("module.exports = \"src/img/food-table.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/food-table.jpg?");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ eval("module.exports = \"assets/img/food-table.jpg\";\n\n//# sourceURL=webpack:/
   \******************************/
 /***/ ((module) => {
 
-eval("module.exports = \"assets/img/grill.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/grill.jpg?");
+eval("module.exports = \"src/img/grill.jpg\";\n\n//# sourceURL=webpack://food-festival/./assets/img/grill.jpg?");
 
 /***/ }),
 
