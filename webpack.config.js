@@ -47,7 +47,7 @@ const config = {
       analyzerMode: "static"
     }),
     new WebpackPwaManifest({
-        publicPath: '/', 
+        publicPath: 'dist', 
         name: "Food Festival",
         short_name: "Food Fest",
         description: "An app that allows you to view upcoming food events.",
